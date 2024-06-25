@@ -1,0 +1,571 @@
+@font-face {
+    font-family:"cervino_fino";
+    src: url(../fonts/Cervino-ThinNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino_semifino";
+    src: url(../fonts/Cervino-LightNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino";
+    src: url(../fonts/Cervino-RegularNeue.ttf);
+}
+
+@font-face {
+    font-family:"cervino_bold";
+    src: url(../fonts/Cervino-BoldNeue.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.modal-backdrop {
+    background-color: var(--corFundo2);
+ }
+
+ .modal-content {
+    background-color: var(--corFundo1);
+    color: var(--corTexto2);
+    
+  }
+
+.btn-close{
+    color: var(--corFundo2);
+    background-color: #c0ab95;
+}
+
+.modal h1{
+    color: var(--corTexto2);
+    font-family:"cervino_fino";
+    text-align: 80px;
+}
+
+.modal h2{
+    color: var(--corTexto2);
+    font-family:"cervino_fino";
+    text-align: 20px;
+
+}
+
+.modal hr{
+    color: var(--corFundo2);
+
+}
+
+.modal img{
+    width: 50%;
+
+}
+
+.imgpop{
+    position: relative;
+    background: url(../imagens/areia.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment:fixed ;
+}
+
+.kussuado{
+   
+    background-image: linear-gradient(
+        to right,
+        #bb9f9f 0,
+        #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #bb9f9f 100%
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+.tolete{
+    background-image: linear-gradient(
+        to right,
+        #c09885 0,
+        #cb6d51 22%,  
+        #ecaf68 45%,
+        #f5d9d0 50%,
+        #ecaf68 55%,
+        #cb6d51 78%,
+        #c09885  100%  
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+.sheyla{
+    background-image: linear-gradient(
+        to right,
+        #deb283 0,
+        #a55a3f 22%,  
+        #e2a782 45%,
+        #deb283  50%,
+        #e2a782 55%,
+        #a55a3f 78%,
+        #deb283  100%  
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.produto ::selection , .reviews ::selection, .headersection ::selection, .modal ::selection {
+    background: var(--corFundo2);
+    color: var(--corTexto1);
+}
+
+.teste ::selection{
+    background: var(--corFundo2);
+    color: var(--corTexto1);
+}
+
+
+.AboutUS ::selection , .final ::selection {
+    background: var(--corFundo1);
+    color: var(--corTexto2);
+}
+
+
+
+:root{
+    --corFundo1:#181818;
+    --corFundo2:#D6BAAA;
+    --corFundo3:#eeeeee;
+    
+
+    --corTexto1:#181818;
+    --corTexto2:#c7b8a8;
+    --corTexto3:#e2d4c4;
+    --corTexto4:#e2d4c4;
+
+}
+
+::-webkit-scrollbar
+{
+   width: 12px; 
+   height: 2px;
+   background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(transparent,#947e66,transparent);
+
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: linear-gradient(transparent,#c0ab95,transparent);
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family:"cervino_semifino" ;
+    justify-content: center; 
+}
+
+
+p{
+    font-family: "cervino_semifino";
+    font-size: 25px;
+    line-height: 30px;
+    padding: 30px 0px;
+}
+
+
+
+h1{
+    font-family: "cervino_bold";
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: var(--corTexto2);
+}
+
+
+h2{
+    font-size: 30px;
+    font-family:"cervino";
+    display: inline;
+    text-transform: uppercase;
+}
+
+
+
+.recuo {
+    text-indent: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.grifado1{
+    color: var(--corTexto2);
+    background-color: var(--corFundo1);
+    font-size: 30px;
+    font-family:"cervino_semifino" ;
+}
+
+.grifado2{
+    color: var(--corTexto1);
+    background-color: var(--corFundo2);
+    font-size: 30px;
+    font-family:"cervino_semifino" ;
+}
+
+
+ 
+
+.carousel-indicators{
+  margin: -20px;
+}
+
+
+.headersection {
+    font-family: "cervino";
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9;  
+    font-weight: bolder;  
+}
+
+#logo {
+    height: 5vh;
+    padding-left: 50px;
+}
+
+
+.nav-item  :link,:visited{
+    line-height:18px;
+    font-size: 18px;
+    margin: 0px 50px;
+    text-transform: uppercase;   
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+
+.link-animation{
+    position: relative;
+    cursor:pointer;
+   
+}
+
+.link-animation::after{
+
+    position: absolute;
+    content:"";
+    left: 0%;
+    width: 0%;
+    background-color:var(--corFundo2);
+    z-index: -1;
+    transition: width 0.4s ease-out;
+}
+
+.nav-item .link-animation::after {
+    height: 50%;
+
+    
+}
+
+
+
+.link-animation:hover.link-animation::after{
+    width: 100%;
+
+}
+
+
+
+
+.introsection {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--corFundo2);
+}
+
+
+/* 
+.modelo{
+    padding: 25px 0px 1px 0px;
+} */
+
+
+
+.modelo a {
+
+    font-size: 200px;
+    font-family:"cervino_fino";
+    color: var(--corTexto1);
+    text-decoration: none;
+    z-index: 4;
+
+}
+
+/* .modelo .teste{
+    z-index: 2;
+} */
+
+/* @media (min-width: 1440px) {
+    .teste {
+      font-size: 300px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .teste {
+        
+      font-size: 100px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .teste { 
+        padding: 10px;
+      font-size: 100px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .teste { 
+      padding: 10px;
+      font-size: 100px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .teste {
+        padding: 10px;
+      font-size:90px;
+    }
+  } */
+
+
+
+/* .modelo .link-animation::after {
+    height: 100%;
+    background-color:var(--corFundo2);
+    
+   
+} */
+
+
+
+
+.descricao{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--corTexto1);
+}
+
+
+.AboutUS{
+    background-color: var(--corFundo2);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--corTexto1);
+    position: relative;
+    padding: 80px 0px;
+
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+    
+}
+
+.fundo{
+    background-color: #181818;
+}
+.AboutUS h1{
+    color: var(--corTexto1);
+}
+
+.AboutUS a  {
+    color: var(--corTexto1);
+   }
+
+
+
+.dividir{
+
+    background-color: var(--corFundo1);
+    
+}
+
+
+
+
+
+
+.text-lg-end_ad{
+    text-align: justify;  
+    text-align-last: right;
+}
+
+.reviews{
+    background-color: var(--corFundo);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--corTexto2);
+    background-color: var(--corFundo1);
+}
+
+
+.reviews img{
+    margin: 0 auto;}
+
+ .titulo{
+    margin-bottom: 30px;
+}
+
+.reviews a{
+    color: var(--corTexto2);
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagens/nuvem/ceu.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment:fixed ;
+}
+
+.banner .mascara{
+    background: url(../imagens/nuvem/mascara.png);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.banner .clouds{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.banner .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(8s * var(--i)) linear infinite;
+    z-index: 3;
+}
+
+.final
+{
+    padding: 5px 0px;
+    background-color: var(--corFundo2);
+    color: var(--corTexto1);
+    justify-content: center;
+    font-size: 14px;    
+    font-weight: bold;
+}
+
+
+.final a{
+    color: var(--corTexto1);
+}
+
+.produto{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+    background: var(--corFundo1);
+
+}
+
+.produto img {
+
+    object-fit:cover;
+  
+    /* -webkit-box-reflect:below 1px linear-gradient(transparent, transparent, #0004); */
+    
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+  }
+
+  .anuncio{
+    padding-top: 80px 0px;
+  }
+
+
+
+ .imagens:hover img {
+    opacity:0.3;
+  }
+
+  .produto img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+
+
+
+
+.owl-carousel img{
+    padding-top:35px ;
+    padding-bottom: 30px;
+}
+
+
+
+
