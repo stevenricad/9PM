@@ -39,7 +39,7 @@
 
 .btn-close{
     color: var(--corFundo2);
-    background-color: #c0ab95;
+    background-color: white;
 }
 
 .modal h1{
@@ -151,14 +151,14 @@
 
 :root{
     --corFundo1:#181818;
-    --corFundo2:#D6BAAA;
+    --corFundo2:white;
     --corFundo3:#eeeeee;
     
 
     --corTexto1:#181818;
-    --corTexto2:#c7b8a8;
-    --corTexto3:#e2d4c4;
-    --corTexto4:#e2d4c4;
+    --corTexto2:white;
+    --corTexto3:white;
+    --corTexto4:white;
 
 }
 
@@ -401,7 +401,7 @@ h2{
 
 
 .AboutUS{
-    background-color: var(--corFundo2);
+    background-color: white;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -509,7 +509,7 @@ h2{
 .final
 {
     padding: 5px 0px;
-    background-color: var(--corFundo2);
+    background-color: white;
     color: var(--corTexto1);
     justify-content: center;
     font-size: 14px;    
